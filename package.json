@@ -2,7 +2,7 @@
   "name": "nodedr-orderrestro",
   "private": true,
   "version": "0.1.0",
-  "description": "Nodedr OrderRestro — offline-first Restaurant Management System",
+  "description": "Nodedr OrderRestro \u2014 offline-first Restaurant Management System",
   "author": "Raktim Ranjit <mail@raktimranjit.com> (https://github.com/Raktim94)",
   "license": "AGPL-3.0-only",
   "repository": {
@@ -30,12 +30,12 @@
     "nextjs"
   ],
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
+    "dev": "node init && turbo run dev",
+    "build": "node init && turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
-    "build-windows-msix": "pwsh -NoProfile -File windows/msix/build-windows-msix.ps1 && pwsh -NoProfile -File windows/msix/validate-msix.ps1"
+    "build-windows-msix": "node init && pwsh -NoProfile -File windows/msix/build-windows-msix.ps1 && pwsh -NoProfile -File windows/msix/validate-msix.ps1"
   },
   "devDependencies": {
     "turbo": "^2.10.9",
